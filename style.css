@@ -123,10 +123,9 @@
     margin:0 auto;
 }
 .navbar{
-    display:flex;
     justify-content: space-between;
     margin-top: 87px;
-    justify-items: center;
+    align-items: center;
 }
 /* .nav-links{
     display:flex;
@@ -141,5 +140,65 @@
  }
 .influencer h3{
     font-size: 1.5rem;
+}
+.banner-container{
+    max-width: 1188px;
+    margin-top: 50px;
+    display:flex;
+    justify-content:space-around;
+    gap:133px;
+    align-items: center;
+}
+.journey{
+    font-size: 52px;
+    margin-bottom: 16px;
+}
+.journey-description{
+    font-weight: 600;   
+}
+.btn-prebook{
+    background-color: #E02C6D;
+    border-radius: 41px;
+    color:white;
+    font-weight: bold;
+    padding:10px 56px 10px 24px;
+    border:none;
+}
+.img-container img{
+    opacity: 0.75;
+}
+.camera{
+    position:absolute;
+    transform: translateY(-450px);
+}
 
+/* Brand Styles */
+.brands{
+    max-width:1110px;
+    margin:100px auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap:61px;
+}
+
+
+/* Media Query Section */
+@media screen and (max-width: 576px) {
+    .navbar,
+    .nav-links{
+      flex-direction: column;
+    }
+    .journey{
+      text-align: center;
+    }
+    .banner-container{
+      flex-direction: column-reverse;
+    }
+    .banner1{
+      text-align: center;
+    }
+    .brands{
+      grid-template-columns: repeat(3, 1fr);
+      gap:10px;
+    }
 }
